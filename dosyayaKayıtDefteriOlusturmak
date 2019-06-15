@@ -1,0 +1,8 @@
+ad = input("Adınızı Giriniz : ")
+soyad = input("Soyadınızı Giriniz : ")
+telefon_no = int(input("Telefon Numarasını Başında '+' Olmadan Giriniz : "))
+print("*"*30)
+print("Ad :",ad,"\n","Soyad :",soyad,"\n","Telefon No :",telefon_no)
+dosya = open("kayıt_defteri.txt","w")
+print("ad :",ad,"\n","soyad :",soyad,"\n","tel no :",telefon_no,file=dosya)
+dosya.close()
